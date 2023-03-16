@@ -7,13 +7,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
   justify-content: center;
 }
 .container {
   display: flex;
   flex-direction: column;
   margin-bottom: 4rem;
+  width: 70%;
 }
 .nav {
   display: flex;
@@ -47,24 +47,15 @@ body {
   display: flex;
   margin-top: 3rem;
   gap: 2rem;
-  height: 100%;
-}
-.left,
-.right {
-  width: 50%;
+  border: 1px solid red;
 }
 .left {
   display: flex;
   flex-direction: column;
+  padding: 2rem;
   gap: 2rem;
 }
-.bgimage {
-  background-image: url(./images/image-product-1.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
+.bgimage img {
   border-radius: 1rem;
 }
 .bgimage2 {
@@ -72,61 +63,29 @@ body {
   gap: 2rem;
   border-radius: 1rem;
 }
-/* .img1 {
-  background-image: url(./images/image-product-1-thumbnail.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 40%;
-  width: 25%;
+.img1 img {
   border-radius: 0.5rem;
 }
-.img2 {
-  background-image: url(./images/image-product-2-thumbnail.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 40%;
-  width: 25%;
-  border-radius: 1rem;
-}
-.img3 {
-  background-image: url(./images/image-product-3-thumbnail.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 40%;
-  width: 25%;
-  border-radius: 1rem;
-}
-.img4 {
-  background-image: url(./images/image-product-4-thumbnail.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 40%;
-  width: 25%;
-  border-radius: 1rem;
-} */
 .right {
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  padding: 1.5rem;
 }
-.dollar{
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
+.dollar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
-.dl1{
-    display: flex;
-    gap: 1rem;
-    align-items: center;
+.dl1 {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
-.dl1 span{
-    border-radius: 10px;
-    padding: .5em;
-    background-color: hsl(25, 100%, 94%);
+.dl1 span {
+  border-radius: 10px;
+  padding: 0.5em;
+  background-color: hsl(25, 100%, 94%);
 }
 .submitcart {
   display: flex;
