@@ -1,3 +1,12 @@
+const image = document.querySelector(".img1")
+image.addEventListener("click",()=>{
+    image.className = "img1 image-1"
+})
+
+
+
+
+// ****************************************************************************
 const button = document.querySelector(".addtocart");
 const done = document.querySelector(".done");
 console.log(button);
@@ -13,3 +22,5 @@ button.addEventListener('click',()=>{
   }
     
 });
+
+
