@@ -1,8 +1,7 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 .attribution {
   font-size: 11px;
@@ -11,190 +10,120 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 body {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 3rem;
+  min-height: 100vh;
+  gap: 3rem;
 }
 .container {
+  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
-  margin-bottom: 4rem;
-  width: 70%;
+  gap: 3rem;
+  padding: 0 2rem ;
 }
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid hsl(220, 14%, 75%);
-  padding-bottom: 2rem;
+  width: 95%;
+  margin: 0 auto;
+  padding: 2rem 0;
 }
-.logo1menu {
+.logo-links {
   display: flex;
   gap: 3rem;
   align-items: center;
 }
-.menu ul {
+.menu{
   display: flex;
-  gap: 3rem;
-  list-style-type: none;
+  gap: 2rem;
 }
-.menu ul li a {
-  display: flex;
-  justify-content: space-around;
-  color: black;
-  text-decoration: none;
+.menu a{
+  padding: 1rem;
+}
+.menu a.active{
+  background-color: hsl(223, 64%, 98%);
+border-radius: 5px;
+  color: hsl(26, 100%, 55%);
+  text-decoration: underline;
 }
 .cart {
   display: flex;
   gap: 3rem;
   align-items: center;
 }
-.con2 {
+.content{
   display: flex;
-  margin-top: 3rem;
   gap: 2rem;
-  border: 1px solid red;
+  width: 90%;
+  margin: 0 auto;
 }
 .left {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
-  gap: 2rem;
+  gap: 3rem;
+}
+.bgimage{
+  border-radius: 1rem;
+  /* border: 1px solid red; */
 }
 .bgimage img {
   border-radius: 1rem;
+  width: 100%;
+  height: 100%;
 }
 .bgimage2 {
+  /* border: 1px solid red; */
   display: flex;
-  gap: 2rem;
-  border-radius: 1rem;
+  gap: 1rem;
+  width: fit-content;
 }
-.img1 img {
-  border-radius: 0.5rem;
+.img1 img{
+  border-radius: .5rem;
+  height: 100%;
+  width: 100%;
   cursor: pointer;
 }
-.image-1{
-    opacity: 0.4;
-    border: 2.5px solid hsl(26, 100%, 55%);
-    align-self: center;
-    border-radius: 1rem;
-}
-
 .right {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  padding: 1.5rem;
-  align-self: center;
 }
-.heading h1{
-    font-size: 300%;
+.heading h3{
+  color: hsl(26, 100%, 55%);
 }
-.dollar {
+.p{
+  color: hsl(219, 9%, 45%);
+}
+.dl1{
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.dollar{
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-}
-.dl1 {
-  display: flex;
   gap: 1rem;
-  align-items: center;
 }
-.dl1 span {
-  border-radius: 10px;
-  padding: 0.5em;
+.dl1 span{
   background-color: hsl(25, 100%, 94%);
+  padding: 2px 5px;
+  border-radius: 7px;
+  color: hsl(26, 100%, 55%);
+  font-weight: bold;
 }
-.submitcart {
+.dollar2 span{
+  color: hsl(219, 9%, 45%);
+  text-decoration: line-through;
+}
+.add-to-cart{
   display: flex;
-  gap: 1rem;
 }
-.submit2 button {
-  display: block;
-  padding: 0.5em 1em 0.5em 1em;
-  border-radius: 0.3rem;
-  border: none;
-  position: relative;
-  background-color: hsl(26, 100%, 55%);
-  cursor: pointer;
-  height: 2rem;
-  width: 20em;
-  overflow: hidden;
-  transition: transform 0.1s;
-  z-index: 1;
-}
-.submit2 button:hover {
-  transform: scale(1.1);
-}
-.pretext {
-  color: #fff;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-}
-.done {
-  background: #be2edd;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  transition: transform 0.3s ease;
-  transform: translate(-110%) skew(-40deg);
-}
-.posttext {
-  background: #be2edd;
-}
+.icon{
+  border: 1px solid red;
+  /* background-color: hsl(223, 64%, 98%); */
 
-
-
-
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
