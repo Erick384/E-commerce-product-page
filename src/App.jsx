@@ -1,13 +1,13 @@
 import React from "react";
 import "./App.css";
-import { Footer } from "./Components/Footer";
 import { NavBar } from "./Components/NavBar";
 import { Routes, Route } from "react-router-dom";
-import { Collections } from "./Components/Collections";
+import { Collection } from "./Components/Collection";
 import { Men } from "./Components/Men";
 import { Women } from "./Components/Women";
-import { Contact } from "./Components/Contact"
 import { About } from "./Components/About"
+import { Contact } from "./Components/Contact"
+import { Footer } from "./Components/Footer";
 
 export default function App() {
   return (
@@ -15,7 +15,7 @@ export default function App() {
       <NavBar />
       <div className="container">
         <Routes>
-          <Route path="/" element={<Collections />} />
+          <Route path="/" element={<Collection />} />
           <Route path="/men" element={<Men />} />
           <Route path="/women" element={<Women />} />
           <Route path="/abouts" element={<About />} />

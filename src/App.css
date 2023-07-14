@@ -121,9 +121,32 @@ border-radius: 5px;
 }
 .add-to-cart{
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.icon{
-  border: 1px solid red;
-  /* background-color: hsl(223, 64%, 98%); */
-
+.button-one{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(223, 64%, 98%);
+  padding: 0.5rem 3rem;
+  border-radius: .7rem;
+}
+.button-one input{
+  width: 30px;
+}
+.button-two{
+  width: 60%;
+}
+.button-two button{
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  background-color: hsl(26, 100%, 55%);
+  width: 100%;
+}
+.button-two span{
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
 }
