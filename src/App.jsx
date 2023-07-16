@@ -8,6 +8,7 @@ import { Women } from "./Components/Women";
 import { About } from "./Components/About"
 import { Contact } from "./Components/Contact"
 import { Footer } from "./Components/Footer";
+import { Cart } from "./Components/Cart";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <div className="container">
         <Routes>
           <Route path="/" element={<Collection />} />
+          <Route path="/cart" element={<Cart />} />
           <Route path="/men" element={<Men />} />
           <Route path="/women" element={<Women />} />
           <Route path="/abouts" element={<About />} />
