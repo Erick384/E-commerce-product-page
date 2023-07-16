@@ -133,8 +133,8 @@ border-radius: 5px;
   padding: 0.5rem 3rem;
   border-radius: .7rem;
 }
-.button-one input{
-  width: 30px;
+.button-one svg{
+  cursor: pointer;
 }
 .button-two{
   width: 60%;

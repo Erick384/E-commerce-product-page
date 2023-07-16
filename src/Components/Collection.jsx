@@ -14,6 +14,14 @@ export const Collection = () => {
     setMainImage(newImage);
   };
 
+  const [count, setCount] = useState(0);
+  const incrementCount = () => {
+    setCount(count + 1);
+  };
+  const decrementCount = () => {
+    setCount(count - 1);
+  };
+
   return (
     <div className="content">
       <div className="left">
@@ -81,6 +89,7 @@ export const Collection = () => {
               fill="hsl(26, 100%, 55%)"
               class="bi bi-dash-lg"
               viewBox="0 0 16 16"
+              onClick={decrementCount}
             >
               <path
                 fill-rule="evenodd"
@@ -90,7 +99,7 @@ export const Collection = () => {
               />
             </svg>
 
-            <h2>0</h2>
+            <h2>{count}</h2>
 
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -98,6 +107,7 @@ export const Collection = () => {
               height="26"
               class="bi bi-plus"
               viewBox="0 0 16 16"
+              onClick={incrementCount}
             >
               <path
                 d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"

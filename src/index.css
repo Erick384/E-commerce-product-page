@@ -19,7 +19,8 @@ a:hover {
   color: hsl(26, 100%, 55%);
 }
 a:active{
-  text-decoration: underline;
+  border-bottom: 1px solid hsl(26, 100%, 55%);
+  /* text-decoration: underline; */
 }
 h1 {
   font-size: 3.2em;
