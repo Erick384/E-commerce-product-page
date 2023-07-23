@@ -150,3 +150,19 @@ border-radius: 5px;
   color: hsl(0, 0%, 100%);
   font-weight: bold;
 }
+.cart-page{
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-around;
+  /* flex-direction: column; */
+}
+.cart-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  /* border: 1px solid red; */
+}
+.cart-image img{
+  border-radius: 5px;
+}

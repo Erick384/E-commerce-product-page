@@ -19,8 +19,9 @@ a:hover {
   color: hsl(26, 100%, 55%);
 }
 a:active{
-  border-bottom: 1px solid hsl(26, 100%, 55%);
-  /* text-decoration: underline; */
+  /* margin-bottom: 10px; */
+  /* border-bottom: 1px solid hsl(26, 100%, 55%); */
+  text-decoration: underline;
 }
 h1 {
   font-size: 3.2em;
@@ -34,17 +35,18 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: hsl(26, 100%, 55%);
   cursor: pointer;
+  width: 100%;
   transition: border-color 0.25s;
 }
 button:hover {
   border-color: hsl(26, 100%, 55%);
 }
-button:focus,
+/* button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
 @media (prefers-color-scheme: light) {
   :root {

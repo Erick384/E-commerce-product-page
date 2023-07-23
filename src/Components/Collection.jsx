@@ -8,24 +8,23 @@ import imgproducttwo from "../assets/image-product-2-thumbnail.jpg";
 import imgproductthree from "../assets/image-product-3-thumbnail.jpg";
 import imgproductfour from "../assets/image-product-4-thumbnail.jpg";
 import { Link } from "react-router-dom";
+import { Quantity } from "./Quantity";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const Collection = () => {
   const [mainImage, setMainImage] = useState(bgimage);
   const handleImageChange = (newImage) => {
     setMainImage(newImage);
   };
+  const addToCart = () =>{ 
+    toast("Added to cart");
 
-  const [count, setCount] = useState(0);
-  const incrementCount = () => {
-    setCount(count + 1);
-  };
-  const decrementCount = () => {
-    setCount(count - 1);
-  };
-
+  }
   return (
     <div className="content">
       <div className="left">
+      <ToastContainer />
         <div className="bgimage">
           <img src={mainImage} alt="mainImage" />
         </div>
@@ -82,45 +81,9 @@ export const Collection = () => {
         </div>
 
         <div className="add-to-cart">
-          <div className="button-one">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="hsl(26, 100%, 55%)"
-              class="bi bi-dash-lg"
-              viewBox="0 0 16 16"
-              onClick={decrementCount}
-            >
-              <path
-                fill-rule="evenodd"
-                d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z"
-                stroke="hsl(26, 100%, 55%)"
-                stroke-width="2"
-              />
-            </svg>
-
-            <h2>{count}</h2>
-
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="26"
-              height="26"
-              class="bi bi-plus"
-              viewBox="0 0 16 16"
-              onClick={incrementCount}
-            >
-              <path
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
-                stroke="hsl(26, 100%, 55%)"
-                stroke-width="2"
-                fill="none"
-              />
-            </svg>
-          </div>
-
+          <Quantity />
           <div className="button-two">
-            <Link to="/cart">
+            <Link onClick={addToCart}>
               <button>
                 <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
                   <path
